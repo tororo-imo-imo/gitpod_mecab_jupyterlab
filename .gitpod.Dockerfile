@@ -1,3 +1,11 @@
 FROM python:3.7
-RUN apt update -y && apt upgrade -y
+
+USER root
+
+RUN apt-get update && apt-get install -y \
+      git \
+      mecab \
+      libmecab-dev \
+      mecab-ipadic-utf8 
+     
 RUN pip install pipenv
