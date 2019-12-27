@@ -10,6 +10,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
     && cd mecab-ipadic-neologd \
-    && bin/install-mecab-ipadic-neologd -n -y
+    && bin/install-mecab-ipadic-neologd -n -a
     
 RUN pip install pipenv
