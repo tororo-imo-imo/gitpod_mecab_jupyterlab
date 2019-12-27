@@ -1,0 +1,2 @@
+# gitpod_mecab_jupyterlab
+gitpodを用いた自然言語処理の分析系開発環境
