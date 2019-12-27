@@ -1,2 +1,5 @@
 # gitpod_mecab_jupyterlab
-gitpodを用いた自然言語処理の開発環境構築用
+gitpodで自然言語処理の開発環境構築
+
+MeCab (ipadic & neologd)
+
