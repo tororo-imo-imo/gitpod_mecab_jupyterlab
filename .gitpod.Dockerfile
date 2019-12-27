@@ -2,7 +2,7 @@ FROM python:3.7
 
 USER root
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y \
       git \
       mecab \
       libmecab-dev \
@@ -10,6 +10,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
     && cd mecab-ipadic-neologd \
-    && bin/install-mecab-ipadic-neologd -n
+    && bin/install-mecab-ipadic-neologd -n -y
     
 RUN pip install pipenv
